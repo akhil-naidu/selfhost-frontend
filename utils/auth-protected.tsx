@@ -1,8 +1,8 @@
 import { useRouter } from 'next/router';
 import { useNhostAuth } from '@nhost/react-auth';
 
-export function authProtected(Component) {
-  return function AuthProtected(props) {
+export const authProtected = (Component: any) => {
+  return function AuthProtected(props: any) {
     const router = useRouter();
     const { isLoading, isAuthenticated } = useNhostAuth();
 
@@ -17,4 +17,4 @@ export function authProtected(Component) {
 
     return <Component {...props} />;
   };
-}
+};
