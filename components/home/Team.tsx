@@ -1,9 +1,10 @@
 import React from 'react';
+import Image from 'next/image';
 
 const Team = () => {
   return (
     <section className='bg-white dark:bg-gray-800'>
-      <div className='h-[32rem] bg-gray-100 dark:bg-gray-800'>
+      <div className='h-[32rem] bg-white dark:bg-gray-800'>
         <div className='container mx-auto px-6 py-10'>
           <h1 className='text-center text-3xl font-semibold capitalize text-gray-800 dark:text-white lg:text-4xl'>
             The Executive Team
@@ -25,7 +26,9 @@ const Team = () => {
       <div className='container mx-auto -mt-72 px-6 py-10 sm:-mt-80 md:-mt-96'>
         <div className='mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 xl:mt-16 xl:grid-cols-3'>
           <div className='flex flex-col items-center rounded-xl border p-4 shadow-md dark:border-gray-700 sm:p-6'>
-            <img
+            <Image
+              width='350px'
+              height='350px'
               className='aspect-square w-full rounded-xl object-cover shadow-md'
               src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80'
               alt=''
@@ -86,7 +89,9 @@ const Team = () => {
           </div>
 
           <div className='flex flex-col items-center rounded-xl border p-4 shadow-md dark:border-gray-700 sm:p-6'>
-            <img
+            <Image
+              width='350px'
+              height='350px'
               className='aspect-square w-full rounded-xl object-cover shadow-md'
               src='https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80'
               alt=''
@@ -147,7 +152,9 @@ const Team = () => {
           </div>
 
           <div className=' flex flex-col items-center rounded-xl border p-4 shadow-md dark:border-gray-700 sm:p-6'>
-            <img
+            <Image
+              width='350px'
+              height='350px'
               className=' aspect-square w-full rounded-xl object-cover shadow-md'
               src='https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80'
               alt=''

@@ -1,23 +1,48 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Layout } from '@/components/index';
-
+import { nhost } from '@/utils/nhost';
 const Login = () => {
   const headerContent = {
     title: 'Selfhost | Login',
     metaName: 'description',
     metaContent: 'Selfhost.dev allows you to selfhost your favorite open-source project',
   };
+
+  // state variables
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+
+  //handle events
+  const handleUsernameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setUsername(e.target.value);
+  };
+
+  const handlePasswordChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setPassword(e.target.value);
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const submittedDetails = {
+      email: username,
+      password: password,
+    };
+
+    const { error } = await nhost.auth.signIn(submittedDetails);
+    if (error) alert(error.message);
+  };
+
   return (
     <Layout headerContent={headerContent}>
-      <div className='bg-white dark:bg-gray-900'>
+      <div className='bg-gray-100 dark:bg-gray-900'>
         <div className='flex h-screen justify-center'>
           <div className='m-auto  w-full max-w-sm rounded-md bg-white p-6 shadow-md dark:bg-gray-800'>
             <h1 className='text-center text-3xl font-semibold text-gray-700 dark:text-white'>
               Selfhost
             </h1>
 
-            <form className='mt-6'>
+            <form onSubmit={(e) => handleSubmit(e)} className='mt-6'>
               <div>
                 <label
                   htmlFor='username'
@@ -27,6 +52,8 @@ const Login = () => {
                 </label>
                 <input
                   type='text'
+                  value={username}
+                  onChange={(e) => handleUsernameChange(e)}
                   className='mt-2 block w-full rounded-md border bg-white px-4 py-2 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:focus:border-blue-300'
                 />
               </div>
@@ -46,12 +73,17 @@ const Login = () => {
 
                 <input
                   type='password'
+                  value={password}
+                  onChange={(e) => handlePasswordChange(e)}
                   className='mt-2 block w-full rounded-md border bg-white px-4 py-2 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:focus:border-blue-300'
                 />
               </div>
 
               <div className='mt-6'>
-                <button className='w-full transform rounded-md bg-gray-700 px-4 py-2 tracking-wide text-white transition-colors duration-200 hover:bg-gray-600 focus:bg-gray-600 focus:outline-none'>
+                <button
+                  type='submit'
+                  className='w-full transform rounded-md bg-gray-700 px-4 py-2 tracking-wide text-white transition-colors duration-200 hover:bg-gray-600 focus:bg-gray-600 focus:outline-none'
+                >
                   Login
                 </button>
               </div>

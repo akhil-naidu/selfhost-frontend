@@ -3,7 +3,7 @@ import React from 'react';
 const Pricing = () => {
   return (
     <div>
-      <div className='bg-white dark:bg-gray-900'>
+      <div className='bg-gray-100 dark:bg-gray-900'>
         <div className='container mx-auto px-6 py-8'>
           <div className='xl:-mx-8 xl:flex xl:items-center'>
             <div className='flex flex-col items-center xl:mx-8 xl:items-start'>
@@ -43,7 +43,7 @@ const Pricing = () => {
 
             <div className='flex-1 xl:mx-8'>
               <div className='mt-8 space-y-8 md:-mx-4 md:flex md:items-center md:justify-center md:space-y-0 xl:mt-0'>
-                <div className='mx-auto max-w-sm rounded-lg border dark:border-gray-700 md:mx-4'>
+                <div className='mx-auto max-w-sm rounded-lg border bg-white dark:border-gray-700 dark:bg-gray-800 md:mx-4'>
                   <div className='p-6'>
                     <h1 className='text-xl font-medium capitalize text-gray-700 dark:text-white lg:text-3xl'>
                       Essential
@@ -186,7 +186,7 @@ const Pricing = () => {
                   </div>
                 </div>
 
-                <div className='mx-auto max-w-sm rounded-lg border dark:border-gray-700 md:mx-4'>
+                <div className='mx-auto max-w-sm rounded-lg border bg-white dark:border-gray-700 dark:bg-gray-800 md:mx-4'>
                   <div className='p-6'>
                     <h1 className='text-xl font-medium capitalize text-gray-700 dark:text-white lg:text-3xl'>
                       Premium
