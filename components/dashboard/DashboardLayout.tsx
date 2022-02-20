@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { DashboardHeader } from '@/components/dashboard/index';
+import { DashboardHeader } from '@/components/dashboard';
 import Image from 'next/image';
 import Link from 'next/link';
 
