@@ -12,9 +12,9 @@ const Pricing = () => {
               </h1>
 
               <div className='mt-4'>
-                <span className='inline-block h-1 w-40 rounded-full bg-blue-500'></span>
-                <span className='mx-1 inline-block h-1 w-3 rounded-full bg-blue-500'></span>
-                <span className='inline-block h-1 w-1 rounded-full bg-blue-500'></span>
+                <span className='inline-block h-1 w-40 rounded-full bg-blue-600'></span>
+                <span className='mx-1 inline-block h-1 w-3 rounded-full bg-blue-600'></span>
+                <span className='inline-block h-1 w-1 rounded-full bg-blue-600'></span>
               </div>
 
               <p className='mt-4 font-medium text-gray-500 dark:text-gray-300'>
@@ -23,7 +23,7 @@ const Pricing = () => {
 
               <a
                 href='#'
-                className='-mx-1 mt-4 flex items-center text-sm capitalize text-gray-700 hover:text-blue-600 hover:underline dark:text-blue-400 dark:hover:text-blue-500'
+                className='-mx-1 mt-4 flex items-center text-sm capitalize text-gray-700 hover:text-blue-600 hover:underline dark:text-blue-400 dark:hover:text-blue-600'
               >
                 <span className='mx-1'>read more</span>
                 <svg
@@ -50,8 +50,8 @@ const Pricing = () => {
                     </h1>
 
                     <p className='mt-4 text-gray-500 dark:text-gray-300'>
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum quam
-                      voluptatibus
+                      We help individuals, agencies and businesses to build and manage their web
+                      apps more efficiently and provide more reliability by individual support.
                     </p>
 
                     <h2 className='mt-4 text-2xl font-medium text-gray-700 dark:text-gray-300 sm:text-4xl'>
@@ -60,7 +60,7 @@ const Pricing = () => {
 
                     <p className='mt-1 text-gray-500 dark:text-gray-300'>Yearly payment</p>
 
-                    <button className='mt-6 w-full transform rounded-md bg-blue-600 px-4 py-2 capitalize tracking-wide text-white transition-colors duration-200 hover:bg-blue-500 focus:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80'>
+                    <button className='mt-6 w-full transform rounded-md bg-blue-600 px-4 py-2 capitalize tracking-wide text-white transition-colors duration-200 hover:bg-blue-600 focus:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80'>
                       Start Now
                     </button>
                   </div>
@@ -76,7 +76,7 @@ const Pricing = () => {
                       <div className='flex items-center'>
                         <svg
                           xmlns='http://www.w3.org/2000/svg'
-                          className='h-5 w-5 text-blue-500'
+                          className='h-5 w-5 text-blue-600'
                           viewBox='0 0 20 20'
                           fill='currentColor'
                         >
@@ -95,7 +95,7 @@ const Pricing = () => {
                       <div className='flex items-center'>
                         <svg
                           xmlns='http://www.w3.org/2000/svg'
-                          className='h-5 w-5 text-blue-500'
+                          className='h-5 w-5 text-blue-600'
                           viewBox='0 0 20 20'
                           fill='currentColor'
                         >
@@ -114,7 +114,7 @@ const Pricing = () => {
                       <div className='flex items-center'>
                         <svg
                           xmlns='http://www.w3.org/2000/svg'
-                          className='h-5 w-5 text-blue-500'
+                          className='h-5 w-5 text-blue-600'
                           viewBox='0 0 20 20'
                           fill='currentColor'
                         >
@@ -131,7 +131,7 @@ const Pricing = () => {
                       <div className='flex items-center'>
                         <svg
                           xmlns='http://www.w3.org/2000/svg'
-                          className='h-5 w-5 text-blue-500'
+                          className='h-5 w-5 text-blue-600'
                           viewBox='0 0 20 20'
                           fill='currentColor'
                         >
@@ -193,17 +193,17 @@ const Pricing = () => {
                     </h1>
 
                     <p className='mt-4 text-gray-500 dark:text-gray-300'>
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum quam
-                      voluptatibus
+                      Our managed selfhosting platform removes the complexities of setting up your
+                      environment and makes you production ready.
                     </p>
 
                     <h2 className='mt-4 text-2xl font-medium text-gray-700 dark:text-gray-300 sm:text-4xl'>
-                      $500.00 <span className='text-base font-medium'>/life time</span>
+                      $500.00 <span className='text-base font-medium'>/year</span>
                     </h2>
 
                     <p className='mt-1 text-gray-500 dark:text-gray-300'>One time payment</p>
 
-                    <button className='mt-6 w-full transform rounded-md bg-blue-600 px-4 py-2 capitalize tracking-wide text-white transition-colors duration-200 hover:bg-blue-500 focus:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80'>
+                    <button className='mt-6 w-full transform rounded-md bg-blue-600 px-4 py-2 capitalize tracking-wide text-white transition-colors duration-200 hover:bg-blue-600 focus:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80'>
                       Start Now
                     </button>
                   </div>
@@ -219,7 +219,7 @@ const Pricing = () => {
                       <div className='flex items-center'>
                         <svg
                           xmlns='http://www.w3.org/2000/svg'
-                          className='h-5 w-5 text-blue-500'
+                          className='h-5 w-5 text-blue-600'
                           viewBox='0 0 20 20'
                           fill='currentColor'
                         >
@@ -238,7 +238,7 @@ const Pricing = () => {
                       <div className='flex items-center'>
                         <svg
                           xmlns='http://www.w3.org/2000/svg'
-                          className='h-5 w-5 text-blue-500'
+                          className='h-5 w-5 text-blue-600'
                           viewBox='0 0 20 20'
                           fill='currentColor'
                         >
@@ -257,7 +257,7 @@ const Pricing = () => {
                       <div className='flex items-center'>
                         <svg
                           xmlns='http://www.w3.org/2000/svg'
-                          className='h-5 w-5 text-blue-500'
+                          className='h-5 w-5 text-blue-600'
                           viewBox='0 0 20 20'
                           fill='currentColor'
                         >
@@ -274,7 +274,7 @@ const Pricing = () => {
                       <div className='flex items-center'>
                         <svg
                           xmlns='http://www.w3.org/2000/svg'
-                          className='h-5 w-5 text-blue-500'
+                          className='h-5 w-5 text-blue-600'
                           viewBox='0 0 20 20'
                           fill='currentColor'
                         >
@@ -293,7 +293,7 @@ const Pricing = () => {
                       <div className='flex items-center'>
                         <svg
                           xmlns='http://www.w3.org/2000/svg'
-                          className='h-5 w-5 text-blue-500'
+                          className='h-5 w-5 text-blue-600'
                           viewBox='0 0 20 20'
                           fill='currentColor'
                         >
@@ -310,7 +310,7 @@ const Pricing = () => {
                       <div className='flex items-center'>
                         <svg
                           xmlns='http://www.w3.org/2000/svg'
-                          className='h-5 w-5 text-blue-500'
+                          className='h-5 w-5 text-blue-600'
                           viewBox='0 0 20 20'
                           fill='currentColor'
                         >

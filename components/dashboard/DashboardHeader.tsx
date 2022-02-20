@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useNhostAuth } from '@nhost/react-auth';
 import { nhost } from '@/utils/nhost';
 
-const Header = () => {
+const DashboardHeader = () => {
   const { isAuthenticated } = useNhostAuth();
   const [mobileMenuClose, setMobileMenuClose] = useState(true);
   const toggleMobileMenu = () => setMobileMenuClose(!mobileMenuClose);
@@ -17,13 +17,7 @@ const Header = () => {
       <div className='container mx-auto px-6 py-3'>
         <div className='flex flex-col md:flex-row md:items-center md:justify-between'>
           <div className='flex items-center justify-between'>
-            <div className='flex items-center'>
-              <Link href='/'>
-                <a className='transform text-2xl font-bold text-gray-800 transition-colors duration-200 hover:text-gray-700 dark:text-white dark:hover:text-gray-300 lg:text-3xl'>
-                  Selfhost
-                </a>
-              </Link>
-            </div>
+            <div className='flex items-center'></div>
 
             {/* <!-- Mobile menu button --> */}
             <div className='flex md:hidden'>
@@ -46,12 +40,11 @@ const Header = () => {
           {/* <!-- Mobile Menu open: "block", Menu closed: "hidden" --> */}
           <div className={(mobileMenuClose ? 'hidden' : 'block') + ' ' + 'md:block'}>
             <div className='mt-2 flex flex-col md:mx-1 md:mt-0 md:flex-row'>
-              <a
-                className='my-1 transform text-sm leading-5 text-gray-700 transition-colors duration-200 hover:text-blue-600 dark:text-gray-200 dark:hover:text-blue-400 md:mx-4 md:my-0'
-                href='#'
-              >
-                Home
-              </a>
+              <Link href='/'>
+                <a className='my-1 transform text-sm leading-5 text-gray-700 transition-colors duration-200 hover:text-blue-600 dark:text-gray-200 dark:hover:text-blue-400 md:mx-4 md:my-0'>
+                  Home
+                </a>
+              </Link>
               <a
                 className='my-1 transform text-sm leading-5 text-gray-700 transition-colors duration-200 hover:text-blue-600 dark:text-gray-200 dark:hover:text-blue-400 md:mx-4 md:my-0'
                 href='#'
@@ -62,45 +55,17 @@ const Header = () => {
                 className='my-1 transform text-sm leading-5 text-gray-700 transition-colors duration-200 hover:text-blue-600 dark:text-gray-200 dark:hover:text-blue-400 md:mx-4 md:my-0'
                 href='#'
               >
-                Pricing
-              </a>
-              <a
-                className='my-1 transform text-sm leading-5 text-gray-700 transition-colors duration-200 hover:text-blue-600 dark:text-gray-200 dark:hover:text-blue-400 md:mx-4 md:my-0'
-                href='#'
-              >
                 Docs
               </a>
             </div>
           </div>
           <div className='-mx-1 flex items-center py-2 md:mx-0'>
-            {isAuthenticated ? (
-              <>
-                <button
-                  className='mx-1 block w-1/2 transform rounded-md bg-gray-500 px-3 py-2 text-center text-sm font-medium leading-5 text-white transition-colors duration-200 hover:bg-blue-600 md:mx-2 md:w-auto'
-                  onClick={handleLogout}
-                >
-                  Logout
-                </button>
-                <Link href='/dashboard'>
-                  <a className='mx-1 block w-1/2 transform rounded-md bg-blue-600 px-3 py-2 text-center text-sm font-medium leading-5 text-white transition-colors duration-200 hover:bg-blue-600 md:mx-0 md:w-auto'>
-                    Dashboard
-                  </a>
-                </Link>
-              </>
-            ) : (
-              <>
-                <Link href='/login'>
-                  <a className='mx-1 block w-1/2 transform rounded-md bg-gray-500 px-3 py-2 text-center text-sm font-medium leading-5 text-white transition-colors duration-200 hover:bg-blue-600 md:mx-2 md:w-auto'>
-                    Login
-                  </a>
-                </Link>
-                <Link href='/signup'>
-                  <a className='mx-1 block w-1/2 transform rounded-md bg-blue-600 px-3 py-2 text-center text-sm font-medium leading-5 text-white transition-colors duration-200 hover:bg-blue-600 md:mx-0 md:w-auto'>
-                    Join for Free
-                  </a>
-                </Link>
-              </>
-            )}
+            <button
+              className='mx-1 block w-1/2 transform rounded-md bg-gray-500 px-3 py-2 text-center text-sm font-medium leading-5 text-white transition-colors duration-200 hover:bg-blue-600 md:mx-2 md:w-auto'
+              onClick={handleLogout}
+            >
+              Logout
+            </button>
           </div>
         </div>
       </div>
@@ -108,4 +73,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default DashboardHeader;

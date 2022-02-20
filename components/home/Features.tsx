@@ -7,18 +7,18 @@ const Features = () => {
       <section className='bg-gray-100 dark:bg-gray-900'>
         <div className='container mx-auto px-6 py-10'>
           <h1 className='text-center text-3xl font-semibold capitalize text-gray-800 dark:text-white lg:text-4xl'>
-            explore our <br /> awesome <span className='text-blue-500'>Components</span>
+            explore our <br /> awesome <span className='text-blue-600'>Features</span>
           </h1>
 
           <div className='mx-auto mt-6 flex justify-center'>
-            <span className='inline-block h-1 w-40 rounded-full bg-blue-500'></span>
-            <span className='mx-1 inline-block h-1 w-3 rounded-full bg-blue-500'></span>
-            <span className='inline-block h-1 w-1 rounded-full bg-blue-500'></span>
+            <span className='inline-block h-1 w-40 rounded-full bg-blue-600'></span>
+            <span className='mx-1 inline-block h-1 w-3 rounded-full bg-blue-600'></span>
+            <span className='inline-block h-1 w-1 rounded-full bg-blue-600'></span>
           </div>
 
           <div className='mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 xl:mt-12 xl:grid-cols-3 xl:gap-16'>
             <div className='flex flex-col items-center space-y-3 rounded-xl bg-gray-100 p-6 text-center dark:bg-gray-800'>
-              <span className='inline-block rounded-full bg-blue-100 p-3 text-blue-500 dark:bg-blue-500 dark:text-white'>
+              <span className='inline-block rounded-full bg-blue-100 p-3 text-blue-600 dark:bg-blue-600 dark:text-white'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   className='h-6 w-6'
@@ -36,17 +36,17 @@ const Features = () => {
               </span>
 
               <h1 className='text-2xl font-semibold capitalize text-gray-700 dark:text-white'>
-                Copy & paste components
+                Advanced Runtime
               </h1>
 
               <p className='text-gray-500 dark:text-gray-300'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod
-                dignissimos vel non corrupti doloribus voluptatum eveniet
+                Your apps run inside smart containers in a fully managed runtime environment, we
+                handle everything critical for production
               </p>
 
               <a
                 href='#'
-                className='-mx-1 flex transform items-center text-sm capitalize text-blue-500 transition-colors duration-200 hover:text-blue-600 hover:underline dark:text-blue-400 dark:hover:text-blue-500'
+                className='-mx-1 flex transform items-center text-sm capitalize text-blue-600 transition-colors duration-200 hover:text-blue-600 hover:underline dark:text-blue-400 dark:hover:text-blue-600'
               >
                 <span className='mx-1'>read more</span>
                 <svg
@@ -65,7 +65,7 @@ const Features = () => {
             </div>
 
             <div className='flex flex-col items-center space-y-3 rounded-xl bg-gray-100 p-6 text-center dark:bg-gray-800'>
-              <span className='inline-block rounded-full bg-blue-100 p-3 text-blue-500 dark:bg-blue-500 dark:text-white'>
+              <span className='inline-block rounded-full bg-blue-100 p-3 text-blue-600 dark:bg-blue-600 dark:text-white'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   className='h-6 w-6'
@@ -83,17 +83,17 @@ const Features = () => {
               </span>
 
               <h1 className='text-2xl font-semibold capitalize text-gray-700 dark:text-white'>
-                Zero Configrations
+                Github Integration
               </h1>
 
               <p className='text-gray-500 dark:text-gray-300'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod
-                dignissimos vel non corrupti doloribus voluptatum eveniet
+                Our seamless GitHub integration means every push to the main branch will auto deploy
+                your code with zero downtime
               </p>
 
               <a
                 href='#'
-                className='-mx-1 flex transform items-center text-sm capitalize text-blue-500 transition-colors duration-200 hover:text-blue-600 hover:underline dark:text-blue-400 dark:hover:text-blue-500'
+                className='-mx-1 flex transform items-center text-sm capitalize text-blue-600 transition-colors duration-200 hover:text-blue-600 hover:underline dark:text-blue-400 dark:hover:text-blue-600'
               >
                 <span className='mx-1'>read more</span>
                 <svg
@@ -112,7 +112,7 @@ const Features = () => {
             </div>
 
             <div className='flex flex-col items-center space-y-3 rounded-xl bg-gray-100 p-6 text-center dark:bg-gray-800'>
-              <span className='inline-block rounded-full bg-blue-100 p-3 text-blue-500 dark:bg-blue-500 dark:text-white'>
+              <span className='inline-block rounded-full bg-blue-100 p-3 text-blue-600 dark:bg-blue-600 dark:text-white'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   className='h-6 w-6'
@@ -130,17 +130,17 @@ const Features = () => {
               </span>
 
               <h1 className='text-2xl font-semibold capitalize text-gray-700 dark:text-white'>
-                Simple & clean designs
+                Multiple Language and DB
               </h1>
 
               <p className='text-gray-500 dark:text-gray-300'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod
-                dignissimos vel non corrupti doloribus voluptatum eveniet
+                Build your apps with languages like JS, Go, Ruby, Python, Java and link it with db
+                like Postgres, MySQL, Mongo, or Redis
               </p>
 
               <a
                 href='#'
-                className='-mx-1 flex transform items-center text-sm capitalize text-blue-500 transition-colors duration-200 hover:text-blue-600 hover:underline dark:text-blue-400 dark:hover:text-blue-500'
+                className='-mx-1 flex transform items-center text-sm capitalize text-blue-600 transition-colors duration-200 hover:text-blue-600 hover:underline dark:text-blue-400 dark:hover:text-blue-600'
               >
                 <span className='mx-1'>read more</span>
                 <svg

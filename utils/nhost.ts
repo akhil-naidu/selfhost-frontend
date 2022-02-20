@@ -1,7 +1,7 @@
-import { NhostClient } from "@nhost/nhost-js";
+import { NhostClient } from '@nhost/nhost-js';
 
 const nhost = new NhostClient({
-  backendUrl: "http://localhost:1337",
+  backendUrl: process.env.NEXT_PUBLIC_BACKEND_URL || 'https://localhost:1337',
 });
 
 export { nhost };
