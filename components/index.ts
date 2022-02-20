@@ -1,15 +1,15 @@
 // Layout Component
-export { default as Header } from '@/components/layout/Header';
-export { default as Footer } from '@/components/layout/Footer';
-export { default as Layout } from '@/components/layout/Layout';
+export { default as Header } from './layout/Header';
+export { default as Footer } from './layout/Footer';
+export { default as Layout } from './layout/Layout';
 
 // Home Components
-export { default as Hero } from '@/components/home/Hero';
-export { default as Features } from '@/components/home/Features';
-export { default as Pricing } from '@/components/home/Pricing';
-export { default as Team } from '@/components/home/Team';
-export { default as BlogCards } from '@/components/home/BlogCards';
+export { default as Hero } from './home/Hero';
+export { default as Features } from './home/Features';
+export { default as Pricing } from './home/Pricing';
+export { default as Team } from './home/Team';
+export { default as BlogCards } from './home/BlogCards';
 
 // Dashboard Component
-export { default as DashboardLayout } from '@/components/dashboard/DashboardLayout';
-export { default as DashboardHeader } from '@/components/dashboard/DashboardHeader';
+export { default as DashboardLayout } from './dashboard/DashboardLayout';
+export { default as DashboardHeader } from './dashboard/DashboardHeader';
