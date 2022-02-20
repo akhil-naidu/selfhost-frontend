@@ -1,7 +1,9 @@
 import React, { ReactNode } from 'react';
 import Head from 'next/head';
 
-import { Header, Footer } from './index';
+import Footer from './Footer';
+import Header from './Header';
+
 interface LayoutProps {
   headerContent?: {
     title: string;
