@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import Head from 'next/head';
 
-import { Header, Footer } from '@/components/index';
+import { Header, Footer } from '@/components/layout/index';
 
 interface LayoutProps {
   headerContent?: {
