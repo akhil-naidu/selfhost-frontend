@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import { useNhostAuth } from '@nhost/react-auth';
 import Link from 'next/link';
-import Layout from '@/components/layout/Layout';
+import Layout from '@/components/Layout';
 import { nhost } from '@/utils/nhost';
 
 const SignUp = () => {

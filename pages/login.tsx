@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import { useNhostAuth } from '@nhost/react-auth';
-import Layout from '@/components/layout/Layout';
+import Layout from '@/components/Layout';
 import { nhost } from '@/utils/nhost';
 import Link from 'next/link';
 
