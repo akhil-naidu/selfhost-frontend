@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <NhostAuthProvider nhost={nhost}>
       <NhostApolloProvider nhost={nhost}>
          <Head>
-          <meta name="cf-2fa-verify" content="tgDWriVhnJkrhWBJkvX63g23JHiv6N">
+          <meta name="cf-2fa-verify" content="tgDWriVhnJkrhWBJkvX63g23JHiv6N" />
          </Head>
         <Component {...pageProps} />
       </NhostApolloProvider>
